@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Database\Seeders\UsersTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +13,10 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call(UsersTableSeeder::class);
+        $this->call(BrandsTableSeeder::class);
+        $this->call(HairTypesTableSeeder::class);
+        $this->call(ProductTypesTableSeeder::class);
+        $this->call(CountriesTableSeeder::class);
+        $this->call(CodesTableSeeder::class);
     }
 }

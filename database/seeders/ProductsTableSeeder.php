@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Product;
+use Illuminate\Database\Seeder;
+
+class ProductsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $data = [
+
+        ];
+
+        foreach ($data as $item) {
+            Product::query()->create($item);
+        }
+    }
+}
